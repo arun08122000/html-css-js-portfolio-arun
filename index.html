@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Arunachalam S</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Arunachalam S</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/pic-profile.png" alt="Arunachalam S Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Arunachalam S</h1>
+            <p class="section__text__p2">Backend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/Arunachalam_Resume.pdf')">Download CV</button>
+                <button class="btn btn-color-1" 
+                onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="social-container">
+                <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/arun0812'">
+                <img src="./assets/github.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/arun08122000'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section__pic-container">
+                <img src="./assets/1737397317941.jpg" alt="About Profile Picture" class="about-pic"/>
+            </div> -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>2+ years <br> Backend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Tech<br>Information Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Experienced Azure Active Directory B2C Developer with a strong background in Identity and Access Management
+(IAM). Proficient in designing, implementing, and maintaining scalable and secure identity solutions using Azure
+AD B2C. Expertise includes custom policy creation, user journey orchestration, single sign-on (SSO), multi-factor
+authentication (MFA), and integration with third-party identity providers. Skilled in leveraging OAuth2, OpenID
+Connect, and SAML protocols to ensure secure access across applications. Adept at collaborating with
+cross-functional teams to align IAM solutions with business requirements while ensuring compliance with security
+standards and best practices. Committed to delivering user-friendly authentication systems with exceptional
+results and staying current with emerging technologies.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Software Engineer</h2>
+                    <p>Tech Mahindra , Chennai , Tamilnadu</p>
+                    <div class="article-container">
+                        <article class="article">
+                            <div>
+                                <h3>Azure Active Directory B2C</h3>
+                                <ul class="a">
+                                    <li>Engineering and deploying authentication and authorization solutions using Azure AD B2C , providing secure
+                                        access control for a variety of applications.</li>
+                                    <li>Developing custom policies in XML using Azure AD B2C’s Identity Experience Framework.</li>
+                                    <li>Developing scheduled APIs using triggered Azure Functions , ensuring reliable and automated execution of
+                                        background tasks.</li>
+                                    <li>Managing user profiles, attributes and custom claims in Azure AD B2C.</li>
+                                    <li>Having extensive experience in Java API development using Azure Function Application.</li>                  
+                                </ul>
+                            </div>
+                        </article>
+                        <article class="article">
+                            <h2>Skills</h2>
+                            <div>
+                                <h3>Azure Active Directory B2C</h3>
+                                <p>Experienced</p>
+                            </div>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                            <div>
+                                <h3>HTML,CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Basic</p>
+                            </div>
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <p>Developed a RESTful API for sending a verification link for user registration via Sendgrid API by enabling the
+                            automated link generation for users and hosted on Azure Functions.</p>
+                    </div>
+                    <h2 class="experience-sub-title project-title">Magiclink Verification</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                            Github
+                        </button>
+                    </div>
+                </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <p>The Multi - Factor Authentication will trigger during the Azure AD B2C authentication, if the email address of the user is not available in the local storage
+                        of the browser.</p>
+                </div>
+                <h2 class="experience-sub-title project-title">MFA Trigger</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <p>Generates the Azure AD B2C Invite Registration URL for bulk users in CSV file for respective tenant environments with attributes customization.</p>
+                </div>
+                <h2 class="experience-sub-title project-title">URL Generation</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href=''">
+                        Github
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:talk2arunachalam@gmail.com">talk2arunachalam@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/arun0812">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Arunachalam S. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
